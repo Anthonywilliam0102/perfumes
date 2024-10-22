@@ -4,218 +4,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beauté Illuminée - Peles Albinas</title>
+    <title>Beauté Illuminée - Peles exclusivas!</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: 'Montserrat', sans-serif;
-            background-color: #121212;
-            color: #D4AF37;
+            background-color: #1F1F1F;
+            color: #D4A373;
             overflow-x: hidden;
         }
 
         .container {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
             padding: 20px;
-        }
-
-        .content {
-            display: flex;
-            background-color: #1F1F1F;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .content:hover {
-            transform: scale(1.02);
-        }
-
-        .left,
-        .right {
-            width: 50%;
-            padding: 20px;
-        }
-
-        .left {
-            background-color: #2C2C2C;
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-        }
-
-        .right {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-
-        .right img {
-            max-width: 100%;
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s;
-            filter: brightness(0.8);
-        }
-
-        .right img:hover {
-            transform: scale(1.05);
-            filter: brightness(1);
         }
 
         .header {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
+            width: 100%;
+            padding: 20px;
+            background-color: #4A4A4A;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
 
         .header img {
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
+            height: 15px;
+            margin-right: 20px;
+            border-radius: 100%;
         }
 
         .header h1 {
-            font-size: 28px;
-            color: #D4AF37;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-        }
-
-        .title {
             font-size: 36px;
-            color: #D4AF37;
+            margin: 0;
             text-align: center;
-            margin-bottom: 20px;
-            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+            flex: 1;
         }
 
-        .left h2 {
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background-color: #333;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: auto;
+        }
+
+        .card h2 {
             font-size: 24px;
-            color: #1E90FF;
-            margin-bottom: 10px;
+            margin: 10px 0;
+            color: #D4A373;
+        }
+
+        .card p {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #B5A77A;
+        }
+
+        .card .description {
+            font-size: 14px;
+            color: #E5D8B8;
+            line-height: 1.5;
+        }
+
+        .card .number {
+            font-size: 72px;
+            color: #D4A373;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            opacity: 0.1;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons i {
+            font-size: 24px;
+            color: #D4A373;
+            margin: 0 10px;
             transition: color 0.3s;
         }
 
-        .left h2:hover {
-            color: #00BFFF;
+        .social-icons i:hover {
+            color: #F5F5F5;
         }
-
-        .left p {
+        .back-button {
+            position: absolute;
+            top: 120px; /* Ajuste para deixar o botão mais embaixo */
+            left: 20px;
+            background-color: #D4AF37;
+            color: rgb(15, 13, 13);
+            border: none;
+            border-radius: 3px;
+            padding: 5px 10px; /* Aumentado o padding para melhorar o tamanho */
             font-size: 16px;
-            color: #E1E1E1;
-            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            z-index: 1000; /* Para garantir que o botão fique sobre os outros elementos */
         }
 
-        .left ul {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 20px;
-        }
-
-        .left ul li {
-            font-size: 16px;
-            color: #E1E1E1;
-            margin-bottom: 5px;
-            display: flex;
-            align-items: center;
-        }
-
-        .left ul li i {
-            color: #1E90FF;
-            margin-right: 5px;
-        }
-
-        .left .footer {
-            text-align: center;
-            background-color: #1E90FF;
-            color: #FFF;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 20px;
-            font-size: 14px;
-        }
-
-        .right .price {
-            font-size: 24px;
-            color: #D4AF37;
-            text-align: center;
-            margin-top: 20px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        .back-button:hover {
+            background-color: #baa50a;
         }
     </style>
 </head>
 
 <body>
+    <button class="back-button" onclick="window.history.back();">
+        <i class="fas fa-arrow-left"></i> Voltar
+    </button>
     <div class="container">
-        <div class="content">
-            <div class="left">
-                <div class="header">
-                    <img alt="Logo with a golden leaf" height="50"
-                        src="https://storage.googleapis.com/a1aa/image/pz4oORAZkvbvC5g4xbMIJYaf6SigpaBDLFkSUi04253eqLpTA.jpg" />
-                    <h1>Beauté Illuminée</h1>
-                </div>
-                <h2>Seu novo Óleo Corporal para peles Negras!</h2>
-                <p>100% Orgânico</p>
-                <p>Especialmente para:</p>
-                <p>A sua pele negra</p>
-                <ul>
-                    <li><i class="fas fa-check"></i>Cruelty-free</li>
-                    <li><i class="fas fa-check"></i>Sem parabenos</li>
-                    <li><i class="fas fa-check"></i>Sem conservantes</li>
-                </ul>
-                <p>Feito com:</p>
-                <p>Manteiga de Murumuru, Óleo Essencial de Lavanda &amp; Extrato de Flores</p>
-                <div class="footer">@beauté.illuminée</div>
-            </div>
-            <div class="right">
-                <div>
-                    <img alt="Various skincare products on a marble tray"
-                        src="https://storage.googleapis.com/a1aa/image/y0YrvhmxbR5tORefAmjUsbRDx4ea176G3pMzgIkkAbe6rukOB.jpg" />
-                    <div class="price">A partir de R$ 119,99</div>
-                </div>
-            </div>
+        <div class="header">
+            <img alt="Logo with a leaf design" src="https://storage.googleapis.com/a1aa/image/rIxdgBX6fRVyS6lEUGgapjjA51CECuWIy3PX1KsqMUpB1l0JA.jpg" />
+            <h1>Beauté Illuminée - Peles exclusivas</h1>
         </div>
-    </div>
-</body>
-<body>
-    <div class="container">
         <div class="content">
-            <div class="left">
-                <div class="header">
-                    <img alt="Logo with a golden leaf" height="50"
-                        src="https://storage.googleapis.com/a1aa/image/pz4oORAZkvbvC5g4xbMIJYaf6SigpaBDLFkSUi04253eqLpTA.jpg" />
-                    <h1>Beauté Illuminée</h1>
-                </div>
-                <h2>Seu novo Óleo Corporal para peles Albinas!</h2>
-                <p>100% Orgânico</p>
-                <p>Especialmente para:</p>
-                <p>A sua pele albina</p>
-                <ul>
-                    <li><i class="fas fa-check"></i>Cruelty-free</li>
-                    <li><i class="fas fa-check"></i>Sem parabenos</li>
-                    <li><i class="fas fa-check"></i>Sem conservantes</li>
-                </ul>
-                <p>Feito com:</p>
-                <p>Manteiga de Murumuru, Óleo Essencial de Lavanda &amp; Extrato de Flores</p>
-                <div class="footer">@beauté.illuminée</div>
+            <div class="card">
+                <h2>Peles albinas</h2>
+                <img alt="Kit anti-acne with various skincare products" src="img/peles a.jpg" />
+                <p>Protege sua pele dos raios UV.</p>
             </div>
-            <div class="right">
-                <div>
-                    <img alt="Various skincare products on a marble tray"
-                        src="https://storage.googleapis.com/a1aa/image/y0YrvhmxbR5tORefAmjUsbRDx4ea176G3pMzgIkkAbe6rukOB.jpg" />
-                    <div class="price">A partir de R$ 119,99</div>
-                </div>
+            <div class="card">
+                <h2>Peles negras</h2>
+                <img alt="Hand holding skincare products" src="img/peles n.jpg" />
+                <p>Proteçao e refrescância para sua pele.</p>
             </div>
-        </div>
-    </div>
+        
+
 </body>
 
 </html>
+
