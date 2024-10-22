@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauté Illuminée - Lançamentos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: #121212;
+            color: #D4B17E;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background-color: #6E6659;
+            color: #D4B17E;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header .logo {
+            width: 50px;
+            height: 50px;
+            background-color: #4A453C;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            transition: transform 0.3s;
+        }
+
+        .header .logo:hover {
+            transform: scale(1.1);
+        }
+
+        .header .logo i {
+            color: #D4B17E;
+            font-size: 24px;
+        }
+
+        .header .title {
+            font-size: 24px;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 48px;
+            color: #D4B17E;
+            margin: 20px 0;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #2C2C2C;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .card img:hover {
+            transform: scale(1.1);
+        }
+
+        .card .description {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card .description h2 {
+            font-size: 24px;
+            color: #D4B17E;
+            margin: 0;
+        }
+
+        .card .description p {
+            font-size: 16px;
+            color: #D4B17E;
+            margin: 10px 0 0;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 24px;
+            color: #D4B17E;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <i class="fas fa-leaf"></i>
+        </div>
+        <div class="title">Beauté Illuminée</div>
+    </div>
+    <div class="main-title">Lançamentos</div>
+    <div class="content">
+        <div class="card">
+            <img alt="Creme Facial Alecrim Dourado, Sérum Pimenta Rosa, Balm Cacau Atrevido"
+                src="https://storage.googleapis.com/a1aa/image/ed33YHMqR2XSFa4sjbrOUZhlkv1rf3y1z5lPbQxB7fw3QXSnA.jpg" />
+            <div class="description">
+                <h2>Beauté Illuminée</h2>
+                <p>Hidratantes e tratamentos naturais</p>
+            </div>
+        </div>
+        <div class="card">
+            <img alt="Produto premium para clarear marcas na pele"
+                src="https://storage.googleapis.com/a1aa/image/fD4Li4eM50qSNUY3S9IzjaP35lmfajIRGmqTD3NsDQ5zQXSnA.jpg" />
+            <div class="description">
+                <h2>Creme Facial</h2>
+                <p>Produto premium para clarear marcas na pele.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">Produtos Skincare</div>
+</body>
+
+</html>
