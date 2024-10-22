@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumes - Beauté Illuminée</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1F1F1F;
+            color: #D4A373;
+            overflow-x: hidden;
+        }
+
+        .header {
+            width: 100%;
+            background-color: #7a6f5f;
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            border-bottom: 2px solid #D4A373;
+            position: relative; /* Permite centralizar logo e título em relação ao pai */
+        }
+
+        .header .logo {
+            display: flex;
+            align-items: center;
+            position: absolute; /* Permite que o logo fique no canto */
+            left: 20px; /* Ajuste conforme necessário */
+        }
+
+        .header .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .header .title {
+            font-size: 36px;
+            font-family: 'Georgia', serif;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+            text-align: center; /* Centraliza o texto */
+            flex-grow: 1; /* Permite que o título ocupe o espaço disponível */
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            width: 220px;
+            text-align: center;
+            margin: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #D4A373;
+        }
+
+        .card .info {
+            padding: 15px;
+        }
+
+        .card .info h3 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .card .info p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #B5A77A;
+        }
+
+        .card .info .price {
+            font-size: 22px;
+            color: #e74c3c;
+        }
+
+        .footer {
+            background-color: #7a6f5f;
+            color: #d4c4a8;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img alt="Logo with a golden leaf" height="40"
+                src="https://storage.googleapis.com/a1aa/image/ofSPnScoZiQvXa8eTYyAVYxAYBkDGuzPGlIccWee0afEKdJdC.jpg" />
+            <div>
+                Beauté Illuminée
+            </div>
+        </div>
+        <div class="title">
+            Perfumes
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="card">
+                <img alt="Perfume bottle with blue background" height="300"
+                    src="https://storage.googleapis.com/a1aa/image/3sPfycjTNRSuPSFNKqoy3TsgfprNeRehjlVKYR237iJIlukOB.jpg" width="200" />
+                <div class="info">
+                    <h3>BEAUTÉ ILLUMINÉE</h3>
+                    <p>PERFUME MASCULINO</p>
+                    <p>por Apenas:</p>
+                    <p class="price">R$ 109,99</p>
+                </div>
+            </div>
+            <div class="card">
+                <img alt="Perfume bottle with dark background" height="300"
+                    src="https://storage.googleapis.com/a1aa/image/ymLPUN9w8BprCdGvYXTk8YO2zR1GWM8yZwRRIOYtGmVT6S6E.jpg" width="200" />
+                <div class="info">
+                    <h3>BEAUTÉ ILLUMINÉE</h3>
+                    <p>ESSENCIAL INTENSO</p>
+                    <p>Para homens com presença marcante.</p>
+                    <p>por Apenas:</p>
+                    <p class="price">R$ 119,99</p>
+                </div>
+            </div>
+            <div class="card">
+                <img alt="Perfume bottle with pink background" height="300"
+                    src="https://storage.googleapis.com/a1aa/image/B7dwNNNPCHYwGx7ffNLoaTemlh9KGcgMjHEqaOw1p5cfkukOB.jpg" width="200" />
+                <div class="info">
+                    <h3>Perfume Feminino</h3>
+                    <p>por Apenas:</p>
+                    <p class="price">R$ 69,99</p>
+                </div>
+            </div>
+            <div class="card">
+                <img alt="Two perfume bottles with brown background" height="300"
+                    src="https://storage.googleapis.com/a1aa/image/Lm3mNnXJK7L4P1xMolDMc6t9v8PkB8uuQEIegB6HVKYm0l0JA.jpg" width="200" />
+                <div class="info">
+                    <h3>Use nossas fragrâncias e libere a sua essência</h3>
+                    <p>por Apenas:</p>
+                    <p class="price">R$ 49,99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Beauté Illuminée. Todos os direitos reservados.
+    </div>
+</body>
+
+</html>
