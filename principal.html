@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauté Illuminée</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1F1F1F;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #F5F5F5;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .logo-text {
+            color: #D4A373;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+
+        .title {
+            font-size: 48px;
+            color: #D4A373;
+            letter-spacing: 3px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .grid-item {
+            background-color: #333;
+            color: #D4A373;
+            padding: 30px;
+            border-radius: 15px;
+            font-size: 18px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .grid-item:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(212, 163, 115, 0.1), rgba(245, 245, 245, 0.1));
+            opacity: 0.2;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .grid-item:hover:before {
+            opacity: 0.5;
+        }
+
+        .grid-item i {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #F5F5F5;
+        }
+
+        .grid-item:hover i {
+            color: #D4A373;
+        }
+
+        .grid-item h3 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .grid-item p {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #B5A77A;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            margin-top: 40px;
+        }
+
+        .social-icons i {
+            font-size: 30px;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+            color: #F5F5F5;
+            cursor: pointer;
+        }
+
+        .social-icons i:hover {
+            color: #D4A373;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #333;
+            color: #D4A373;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .footer a {
+            color: #D4A373;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #F5F5F5;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .grid-item,
+        .footer {
+            animation: fadeIn 1s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="https://storage.googleapis.com/a1aa/image/ECNNgr24DmKeSKL4D7qQATAHUeqdUi5OUhsnTjJXSap9iLpTA.jpg" alt="Logo Beauté Illuminée">
+            </div>
+            <div class="title">Beauté Illuminée</div>
+        </div>
+
+        <div class="grid">
+            <a href="produtos.html">
+                <div class="grid-item">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Produtos</h3>
+                    <p>Acompanhe as novidades!</p>
+                </div>
+            </a>
+            <a href="sobrenos.html">
+                <div class="grid-item">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>Sobre nós</h3>
+                    <p>Conheça nossa empresa!</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Redes Sociais -->
+    
+        <div class="social-icons">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">
+        CEOs: <a href="#">Anthony William</a>, <a href="#">M. Eduarda Oliveira</a>, <a href="#">Amanda Baracho</a>, <a href="#">Gabriely Jacques</a>.
+        <p>&copy; 2024 Beauté Illuminée. Todos os direitos reservados.</p>
+    </div>
+
+</body>
+
+</html>
