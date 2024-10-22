@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauté Illuminée - Produtos Skincare e Corporal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1F1F1F;
+            color: #D4A373;
+            overflow-x: hidden;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            background-color: #4A4A4A;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .header img {
+            height: 50px;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin: 0;
+            text-align: center;
+            flex: 1;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background-color: #333;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: auto;
+        }
+
+        .card h2 {
+            font-size: 24px;
+            margin: 10px 0;
+            color: #D4A373;
+        }
+
+        .card p {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #B5A77A;
+        }
+
+        .card .description {
+            font-size: 14px;
+            color: #E5D8B8;
+            line-height: 1.5;
+        }
+
+        .card .number {
+            font-size: 72px;
+            color: #D4A373;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            opacity: 0.1;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons i {
+            font-size: 24px;
+            color: #D4A373;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-icons i:hover {
+            color: #F5F5F5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img alt="Logo with a leaf design" src="https://storage.googleapis.com/a1aa/image/rIxdgBX6fRVyS6lEUGgapjjA51CECuWIy3PX1KsqMUpB1l0JA.jpg" />
+            <h1>Beauté Illuminée - Produtos Skincare e Corporal</h1>
+        </div>
+        <div class="content">
+            <div class="card">
+                <h2>Kit Anti-Acne</h2>
+                <img alt="Kit anti-acne with various skincare products" src="https://storage.googleapis.com/a1aa/image/Jv6ICKTgADrQOpamBsAkFcv6urEDDJ3wca3DGigKyLCg6S6E.jpg" />
+                <p>Combate a acne e melhora a saúde da sua pele.</p>
+            </div>
+            <div class="card">
+                <h2>Produtos Essenciais</h2>
+                <img alt="Hand holding skincare products" src="https://storage.googleapis.com/a1aa/image/kUKRzNew1nzhSqpTPLu7ZbfHQ3FpQ8yJXWWnN9HHmBlEqLpTA.jpg" />
+                <p class="description">
+                    1. Sérum facial de vitamina C<br />
+                    2. Protetor solar facial<br />
+                    3. Sérum de ácido hialurônico<br />
+                    4. Creme para a noite<br />
+                    5. Máscara facial hidratante<br />
+                    6. Máscara facial matificante
+                </p>
+            </div>
+            <div class="card">
+                <h2>Sérum Corporal</h2>
+                <img alt="Serum bottle with gold and white design" src="https://storage.googleapis.com/a1aa/image/3BUSSIO2gNrfbKQCex9NuoWw6eiwfKi04UaQrcPRxJGEoukOB.jpg" />
+                <p class="description">
+                    Clareador<br />
+                    Retira manchas na pele<br />
+                    Pele macia e hidratada
+                </p>
+            </div>
+            <div class="card">
+                <h2>Espuma de Limpeza</h2>
+                <img alt="Cleansing foam bottle with gold and black design" src="https://storage.googleapis.com/a1aa/image/KTrsVALUKTLdAl8yBD2IcJVGjaBo5cEfinuOcaSUalufpLpTA.jpg" />
+                <p class="description">
+                    Limpeza profunda<br />
+                    Hidratação alta<br />
+                    Com ácido hialurônico e retinol
+                </p>
+            </div>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 20px; background-color: #4A4A4A; color: #D4A373; margin-top: 40px;">
+        CEOs: Anthony William, M. Eduarda Oliveira, Amanda Baracho, Gabriely Jacques.
+    </footer>
+
+</body>
+
+</html>
