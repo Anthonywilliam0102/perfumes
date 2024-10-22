@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauté Illuminée - Peles Albinas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #121212;
+            color: #D4AF37;
+            overflow-x: hidden;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .content {
+            display: flex;
+            background-color: #1F1F1F;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .content:hover {
+            transform: scale(1.02);
+        }
+
+        .left,
+        .right {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .left {
+            background-color: #2C2C2C;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .right img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+            filter: brightness(0.8);
+        }
+
+        .right img:hover {
+            transform: scale(1.05);
+            filter: brightness(1);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #D4AF37;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        .title {
+            font-size: 36px;
+            color: #D4AF37;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .left h2 {
+            font-size: 24px;
+            color: #1E90FF;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+        }
+
+        .left h2:hover {
+            color: #00BFFF;
+        }
+
+        .left p {
+            font-size: 16px;
+            color: #E1E1E1;
+            margin-bottom: 10px;
+        }
+
+        .left ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .left ul li {
+            font-size: 16px;
+            color: #E1E1E1;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .left ul li i {
+            color: #1E90FF;
+            margin-right: 5px;
+        }
+
+        .left .footer {
+            text-align: center;
+            background-color: #1E90FF;
+            color: #FFF;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .right .price {
+            font-size: 24px;
+            color: #D4AF37;
+            text-align: center;
+            margin-top: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="left">
+                <div class="header">
+                    <img alt="Logo with a golden leaf" height="50"
+                        src="https://storage.googleapis.com/a1aa/image/pz4oORAZkvbvC5g4xbMIJYaf6SigpaBDLFkSUi04253eqLpTA.jpg" />
+                    <h1>Beauté Illuminée</h1>
+                </div>
+                <h2>Seu novo Óleo Corporal para peles Negras!</h2>
+                <p>100% Orgânico</p>
+                <p>Especialmente para:</p>
+                <p>A sua pele negra</p>
+                <ul>
+                    <li><i class="fas fa-check"></i>Cruelty-free</li>
+                    <li><i class="fas fa-check"></i>Sem parabenos</li>
+                    <li><i class="fas fa-check"></i>Sem conservantes</li>
+                </ul>
+                <p>Feito com:</p>
+                <p>Manteiga de Murumuru, Óleo Essencial de Lavanda &amp; Extrato de Flores</p>
+                <div class="footer">@beauté.illuminée</div>
+            </div>
+            <div class="right">
+                <div>
+                    <img alt="Various skincare products on a marble tray"
+                        src="https://storage.googleapis.com/a1aa/image/y0YrvhmxbR5tORefAmjUsbRDx4ea176G3pMzgIkkAbe6rukOB.jpg" />
+                    <div class="price">A partir de R$ 119,99</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="left">
+                <div class="header">
+                    <img alt="Logo with a golden leaf" height="50"
+                        src="https://storage.googleapis.com/a1aa/image/pz4oORAZkvbvC5g4xbMIJYaf6SigpaBDLFkSUi04253eqLpTA.jpg" />
+                    <h1>Beauté Illuminée</h1>
+                </div>
+                <h2>Seu novo Óleo Corporal para peles Albinas!</h2>
+                <p>100% Orgânico</p>
+                <p>Especialmente para:</p>
+                <p>A sua pele albina</p>
+                <ul>
+                    <li><i class="fas fa-check"></i>Cruelty-free</li>
+                    <li><i class="fas fa-check"></i>Sem parabenos</li>
+                    <li><i class="fas fa-check"></i>Sem conservantes</li>
+                </ul>
+                <p>Feito com:</p>
+                <p>Manteiga de Murumuru, Óleo Essencial de Lavanda &amp; Extrato de Flores</p>
+                <div class="footer">@beauté.illuminée</div>
+            </div>
+            <div class="right">
+                <div>
+                    <img alt="Various skincare products on a marble tray"
+                        src="https://storage.googleapis.com/a1aa/image/y0YrvhmxbR5tORefAmjUsbRDx4ea176G3pMzgIkkAbe6rukOB.jpg" />
+                    <div class="price">A partir de R$ 119,99</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
