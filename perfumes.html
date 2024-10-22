@@ -20,19 +20,19 @@
             width: 100%;
             background-color: #7a6f5f;
             display: flex;
-            justify-content: center; /* Centraliza horizontalmente */
+            justify-content: center;
             align-items: center;
             padding: 20px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
             border-bottom: 2px solid #D4A373;
-            position: relative; /* Permite centralizar logo e título em relação ao pai */
+            position: relative;
         }
 
         .header .logo {
             display: flex;
             align-items: center;
-            position: absolute; /* Permite que o logo fique no canto */
-            left: 20px; /* Ajuste conforme necessário */
+            position: absolute;
+            left: 20px;
         }
 
         .header .logo img {
@@ -45,8 +45,8 @@
             font-size: 36px;
             font-family: 'Georgia', serif;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-            text-align: center; /* Centraliza o texto */
-            flex-grow: 1; /* Permite que o título ocupe o espaço disponível */
+            text-align: center;
+            flex-grow: 1;
         }
 
         .content {
@@ -118,10 +118,32 @@
         a:hover {
             text-decoration: underline;
         }
+
+        .back-button {
+            position: absolute;
+            top: 95px; /* Ajuste para deixar o botão mais embaixo */
+            left: 20px;
+            background-color: #D4AF37;
+            color: rgb(15, 13, 13);
+            border: none;
+            border-radius: 3px;
+            padding: 5px 10px; /* Aumentado o padding para melhorar o tamanho */
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            z-index: 1000; /* Para garantir que o botão fique sobre os outros elementos */
+        }
+
+        .back-button:hover {
+            background-color: #baa50a;
+        }
     </style>
 </head>
 
 <body>
+    <button class="back-button" onclick="window.history.back();">
+        <i class="fas fa-arrow-left"></i> Voltar
+    </button>
     <div class="header">
         <div class="logo">
             <img alt="Logo with a golden leaf" height="40"
